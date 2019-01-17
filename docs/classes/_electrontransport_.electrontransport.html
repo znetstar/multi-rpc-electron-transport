@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TCPTransport | multi-rpc-tcp-transport</title>
+	<title>ElectronTransport | multi-rpc-electron-transport</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">multi-rpc-tcp-transport</a>
+					<a href="../index.html" class="title">multi-rpc-electron-transport</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_tcptransport_.html">&quot;TCPTransport&quot;</a>
+					<a href="../modules/_electrontransport_.html">&quot;ElectronTransport&quot;</a>
 				</li>
 				<li>
-					<a href="_tcptransport_.tcptransport.html">TCPTransport</a>
+					<a href="_electrontransport_.electrontransport.html">ElectronTransport</a>
 				</li>
 			</ul>
-			<h1>Class TCPTransport</h1>
+			<h1>Class ElectronTransport</h1>
 		</div>
 	</div>
 </header>
@@ -72,8 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A transport uses TCP as its protocol.
-						This transport will not work in the browser.</p>
+						<p>A transport that uses Electron IPC for communication.</p>
 					</div>
 				</div>
 			</section>
@@ -84,7 +83,7 @@
 						<span class="tsd-signature-type">PersistentTransport</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">TCPTransport</span>
+								<span class="target">ElectronTransport</span>
 							</li>
 						</ul>
 					</li>
@@ -103,56 +102,66 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_tcptransport_.tcptransport.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_electrontransport_.electrontransport.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_tcptransport_.tcptransport.html#connection" class="tsd-kind-icon">connection</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_tcptransport_.tcptransport.html#connections" class="tsd-kind-icon">connections</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_tcptransport_.tcptransport.html#host" class="tsd-kind-icon">host</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_tcptransport_.tcptransport.html#path" class="tsd-kind-icon">path</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_tcptransport_.tcptransport.html#port" class="tsd-kind-icon">port</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_tcptransport_.tcptransport.html#reconnectdelay" class="tsd-kind-icon">reconnect<wbr>Delay</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_tcptransport_.tcptransport.html#serializer" class="tsd-kind-icon">serializer</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_tcptransport_.tcptransport.html#server" class="tsd-kind-icon">server</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_electrontransport_.electrontransport.html#channelname" class="tsd-kind-icon">channel<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_electrontransport_.electrontransport.html#connected" class="tsd-kind-icon">connected</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_electrontransport_.electrontransport.html#connection" class="tsd-kind-icon">connection</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_electrontransport_.electrontransport.html#connections" class="tsd-kind-icon">connections</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_electrontransport_.electrontransport.html#electron" class="tsd-kind-icon">electron</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_electrontransport_.electrontransport.html#mainreceivebound" class="tsd-kind-icon">main<wbr>Receive<wbr>Bound</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_electrontransport_.electrontransport.html#reconnectdelay" class="tsd-kind-icon">reconnect<wbr>Delay</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#reconnectondisconnect" class="tsd-kind-icon">reconnect<wbr>OnDisconnect</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_electrontransport_.electrontransport.html#serializer" class="tsd-kind-icon">serializer</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-private"><a href="_electrontransport_.electrontransport.html#ipcmain" class="tsd-kind-icon">ipc<wbr>Main</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-private"><a href="_electrontransport_.electrontransport.html#ipcrenderer" class="tsd-kind-icon">ipc<wbr>Renderer</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-static"><a href="_electrontransport_.electrontransport.html#isserver" class="tsd-kind-icon">is<wbr>Server</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#addconnection" class="tsd-kind-icon">add<wbr>Connection</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_tcptransport_.tcptransport.html#close" class="tsd-kind-icon">close</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_tcptransport_.tcptransport.html#connect" class="tsd-kind-icon">connect</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_tcptransport_.tcptransport.html#disablereconnect" class="tsd-kind-icon">disable<wbr>Reconnect</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#emit" class="tsd-kind-icon">emit</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#emitasync" class="tsd-kind-icon">emit<wbr>Async</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_tcptransport_.tcptransport.html#listen" class="tsd-kind-icon">listen</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#listeners" class="tsd-kind-icon">listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#listenersany" class="tsd-kind-icon">listeners<wbr>Any</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#many" class="tsd-kind-icon">many</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#off" class="tsd-kind-icon">off</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#offany" class="tsd-kind-icon">off<wbr>Any</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#on" class="tsd-kind-icon">on</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#onany" class="tsd-kind-icon">on<wbr>Any</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#once" class="tsd-kind-icon">once</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#prependany" class="tsd-kind-icon">prepend<wbr>Any</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#prependmany" class="tsd-kind-icon">prepend<wbr>Many</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_tcptransport_.tcptransport.html#receive" class="tsd-kind-icon">receive</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_tcptransport_.tcptransport.html#reconnect" class="tsd-kind-icon">reconnect</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#removeconnection" class="tsd-kind-icon">remove<wbr>Connection</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_tcptransport_.tcptransport.html#send" class="tsd-kind-icon">send</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_tcptransport_.tcptransport.html#sendconnection" class="tsd-kind-icon">send<wbr>Connection</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#sendto" class="tsd-kind-icon">send<wbr>To</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_tcptransport_.tcptransport.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_tcptransport_.tcptransport.html#uniqueid" class="tsd-kind-icon">unique<wbr>Id</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#addconnection" class="tsd-kind-icon">add<wbr>Connection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_electrontransport_.electrontransport.html#close" class="tsd-kind-icon">close</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_electrontransport_.electrontransport.html#connect" class="tsd-kind-icon">connect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#emit" class="tsd-kind-icon">emit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#emitasync" class="tsd-kind-icon">emit<wbr>Async</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_electrontransport_.electrontransport.html#listen" class="tsd-kind-icon">listen</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#listeners" class="tsd-kind-icon">listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#listenersany" class="tsd-kind-icon">listeners<wbr>Any</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_electrontransport_.electrontransport.html#mainreceive" class="tsd-kind-icon">main<wbr>Receive</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#many" class="tsd-kind-icon">many</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#off" class="tsd-kind-icon">off</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#offany" class="tsd-kind-icon">off<wbr>Any</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#onany" class="tsd-kind-icon">on<wbr>Any</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#once" class="tsd-kind-icon">once</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#prependany" class="tsd-kind-icon">prepend<wbr>Any</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#prependmany" class="tsd-kind-icon">prepend<wbr>Many</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_electrontransport_.electrontransport.html#receive" class="tsd-kind-icon">receive</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#reconnect" class="tsd-kind-icon">reconnect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#reconnectondisconnecthandler" class="tsd-kind-icon">reconnect<wbr>OnDisconnect<wbr>Handler</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#removeconnection" class="tsd-kind-icon">remove<wbr>Connection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_electrontransport_.electrontransport.html#renderreceive" class="tsd-kind-icon">render<wbr>Receive</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_electrontransport_.electrontransport.html#send" class="tsd-kind-icon">send</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_electrontransport_.electrontransport.html#sendto" class="tsd-kind-icon">send<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_electrontransport_.electrontransport.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_electrontransport_.electrontransport.html#uniqueid" class="tsd-kind-icon">unique<wbr>Id</a></li>
 							</ul>
 						</section>
 					</div>
@@ -164,23 +173,17 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new TCPTransport<span class="tsd-signature-symbol">(</span>serializer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Serializer</span>, port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_tcptransport_.tcptransport.html" class="tsd-signature-type">TCPTransport</a></li>
-						<li class="tsd-signature tsd-kind-icon">new TCPTransport<span class="tsd-signature-symbol">(</span>serializer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Serializer</span>, port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_tcptransport_.tcptransport.html" class="tsd-signature-type">TCPTransport</a></li>
-						<li class="tsd-signature tsd-kind-icon">new TCPTransport<span class="tsd-signature-symbol">(</span>serializer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Serializer</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_tcptransport_.tcptransport.html" class="tsd-signature-type">TCPTransport</a></li>
-						<li class="tsd-signature tsd-kind-icon">new TCPTransport<span class="tsd-signature-symbol">(</span>serializer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Serializer</span>, server<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Server</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_tcptransport_.tcptransport.html" class="tsd-signature-type">TCPTransport</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Electron<wbr>Transport<span class="tsd-signature-symbol">(</span>serializer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Serializer</span>, channelName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, electron<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_electrontransport_.electrontransport.html" class="tsd-signature-type">ElectronTransport</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides Transport.__constructor</p>
+								<p>Overrides PersistentTransport.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L34">TCPTransport.ts:34</a></li>
+									<li>Defined in ElectronTransport.ts:25</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a TCP transport that will listen on or connect to a port and host.</p>
-								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -188,232 +191,131 @@
 									<h5>serializer: <span class="tsd-signature-type">Serializer</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>The serializer to use for encoding/decoding messages.</p>
+											<p>Serializer for messages.</p>
 										</div>
 									</div>
 								</li>
 								<li>
-									<h5>port: <span class="tsd-signature-type">number</span></h5>
+									<h5>channelName: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>The port to listen on or connect to.</p>
+											<p>Channel name.</p>
 										</div>
 									</div>
 								</li>
 								<li>
-									<h5>host: <span class="tsd-signature-type">string</span></h5>
+									<h5>electron: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>The host to listen on or connect to.</p>
+											<p>Root electron object (e.g. <code>require(&quot;electron&quot;)</code>).</p>
 										</div>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_tcptransport_.tcptransport.html" class="tsd-signature-type">TCPTransport</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overrides Transport.__constructor</p>
-								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L42">TCPTransport.ts:42</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a TCP transport that will listen on a port on all interfaces, or connect to a port on localhost.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>serializer: <span class="tsd-signature-type">Serializer</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The serializer to use for encoding/decoding messages.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>port: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The port to listen on or connect to.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_tcptransport_.tcptransport.html" class="tsd-signature-type">TCPTransport</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overrides Transport.__constructor</p>
-								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L48">TCPTransport.ts:48</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a TCP transport that will listen on or connect to an IPC Path.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>see</dt>
-									<dd><p><a href="https://nodejs.org/api/net.html#net_identifying_paths_for_ipc_connections">https://nodejs.org/api/net.html#net_identifying_paths_for_ipc_connections</a></p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>serializer: <span class="tsd-signature-type">Serializer</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The serializer to use for encoding/decoding messages.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The IPC Path to listen on or connect to.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_tcptransport_.tcptransport.html" class="tsd-signature-type">TCPTransport</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overrides Transport.__constructor</p>
-								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L55">TCPTransport.ts:55</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a TCP transport that will use an existing net.Server.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>serializer: <span class="tsd-signature-type">Serializer</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The serializer to use for encoding/decoding messages.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>server: <span class="tsd-signature-type">Server</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The net.Server to listen on.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_tcptransport_.tcptransport.html" class="tsd-signature-type">TCPTransport</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_electrontransport_.electrontransport.html" class="tsd-signature-type">ElectronTransport</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-					<a name="connection" class="tsd-anchor"></a>
-					<h3>connection</h3>
-					<div class="tsd-signature tsd-kind-icon">connection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Socket</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="channelname" class="tsd-anchor"></a>
+					<h3>channel<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">channel<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides PersistentTransport.connection</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L12">TCPTransport.ts:12</a></li>
+							<li>Defined in ElectronTransport.ts:33</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The connection to the server.</p>
+							<p>Channel name.</p>
 						</div>
 					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+					<a name="connected" class="tsd-anchor"></a>
+					<h3>connected</h3>
+					<div class="tsd-signature tsd-kind-icon">connected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Overrides PersistentTransport.connected</p>
+						<ul>
+							<li>Defined in ElectronTransport.ts:9</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+					<a name="connection" class="tsd-anchor"></a>
+					<h3>connection</h3>
+					<div class="tsd-signature tsd-kind-icon">connection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<aside class="tsd-sources">
+						<p>Overrides PersistentTransport.connection</p>
+						<ul>
+							<li>Defined in ElectronTransport.ts:8</li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="connections" class="tsd-anchor"></a>
 					<h3>connections</h3>
-					<div class="tsd-signature tsd-kind-icon">connections<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Socket</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">connections<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Map()</span></div>
 					<aside class="tsd-sources">
 						<p>Overrides PersistentTransport.connections</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L16">TCPTransport.ts:16</a></li>
+							<li>Defined in ElectronTransport.ts:7</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="electron" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> electron</h3>
+					<div class="tsd-signature tsd-kind-icon">electron<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ElectronTransport.ts:33</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A map of clients and their IDs.</p>
+							<p>Root electron object (e.g. <code>require(&quot;electron&quot;)</code>).</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="host" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagOptional">Optional</span> host</h3>
-					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="mainreceivebound" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> main<wbr>Receive<wbr>Bound</h3>
+					<div class="tsd-signature tsd-kind-icon">main<wbr>Receive<wbr>Bound<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;this.mainReceive.bind(this)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L71">TCPTransport.ts:71</a></li>
+							<li>Defined in ElectronTransport.ts:77</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The host to listen on or connect to.</p>
-						</div>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="path" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagOptional">Optional</span> path</h3>
-					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L29">TCPTransport.ts:29</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The IPC Path the client will connect to or server will listen on.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>see</dt>
-							<dd><p><a href="https://nodejs.org/api/net.html#net_identifying_paths_for_ipc_connections">https://nodejs.org/api/net.html#net_identifying_paths_for_ipc_connections</a></p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="port" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagOptional">Optional</span> port</h3>
-					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L24">TCPTransport.ts:24</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The port the client will to connect to or server will listen on.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="reconnectdelay" class="tsd-anchor"></a>
 					<h3>reconnect<wbr>Delay</h3>
-					<div class="tsd-signature tsd-kind-icon">reconnect<wbr>Delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;500</span></div>
+					<div class="tsd-signature tsd-kind-icon">reconnect<wbr>Delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 					<aside class="tsd-sources">
+						<p>Overrides PersistentTransport.reconnectDelay</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L34">TCPTransport.ts:34</a></li>
+							<li>Defined in ElectronTransport.ts:10</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="reconnectondisconnect" class="tsd-anchor"></a>
+					<h3>reconnect<wbr>OnDisconnect</h3>
+					<div class="tsd-signature tsd-kind-icon">reconnect<wbr>OnDisconnect<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from PersistentTransport.reconnectOnDisconnect</p>
+						<ul>
+							<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/multi-rpc-common/lib/PersistentTransport.d.ts:49</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Amount of time to wait between attempting to reconnect.</p>
+							<p>Can turn toggle reconnecting after disconnection.</p>
 						</div>
 					</div>
 				</section>
@@ -424,24 +326,78 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Transport.serializer</p>
 						<ul>
-							<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/multi-rpc-common/lib/Transport.d.ts:10</li>
+							<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/multi-rpc-common/lib/Transport.d.ts:10</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="server" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagOptional">Optional</span> server</h3>
-					<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Server</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L20">TCPTransport.ts:20</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The net.Server instance.</p>
-						</div>
-					</div>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-private">
+					<a name="ipcmain" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> ipc<wbr>Main</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> ipcMain<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ElectronTransport.ts:20</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>EventEmitter for the main process.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-private">
+					<a name="ipcrenderer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> ipc<wbr>Renderer</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> ipcRenderer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ElectronTransport.ts:25</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>EventEmitter for the renderer process.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
+					<a name="isserver" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> is<wbr>Server</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isServer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ElectronTransport.ts:15</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Is true when the transport is being used in the main process.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -457,7 +413,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from PersistentTransport.addConnection</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/multi-rpc-common/lib/PersistentTransport.d.ts:45</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/multi-rpc-common/lib/PersistentTransport.d.ts:56</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -495,7 +451,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.addListener</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:40</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:40</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -522,17 +478,13 @@
 							<aside class="tsd-sources">
 								<p>Overrides PersistentTransport.close</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L256">TCPTransport.ts:256</a></li>
+									<li>Defined in ElectronTransport.ts:118</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Closes the TCP connection.</p>
+									<p>Stops listening for incoming messages.</p>
 								</div>
-								<dl class="tsd-comment-tags">
-									<dt>async</dt>
-									<dd></dd>
-								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
@@ -542,56 +494,22 @@
 					<a name="connect" class="tsd-anchor"></a>
 					<h3>connect</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">connect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Socket</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">connect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides PersistentTransport.connect</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L93">TCPTransport.ts:93</a></li>
+									<li>Defined in ElectronTransport.ts:102</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Connects to the server using the provided details.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>async</dt>
-									<dd></dd>
-									<dt>throws</dt>
-									<dd><p>{TransportInServerState} - If the transport is already acting as a server.</p>
-									</dd>
-									<dt>throws</dt>
-									<dd><ul>
-											<li>If the connection attempt fails.</li>
-										</ul>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Socket</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="disablereconnect" class="tsd-anchor"></a>
-					<h3>disable<wbr>Reconnect</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">disable<wbr>Reconnect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L231">TCPTransport.ts:231</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Disables reconnection upon disconnect.</p>
+									<p>Begins listtening for messages from the main process.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -606,7 +524,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.emit</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:38</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:38</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -633,7 +551,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.emitAsync</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:39</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:39</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -660,7 +578,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.eventNames</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:54</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:54</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -677,18 +595,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L201">TCPTransport.ts:201</a></li>
+									<li>Defined in ElectronTransport.ts:111</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Begins listening for connections using the TCP Server.
-									If a server was passed in the constructor, this function does nothing.</p>
+									<p>Begins listtening for messages from renderers.</p>
 								</div>
-								<dl class="tsd-comment-tags">
-									<dt>async</dt>
-									<dd></dd>
-								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
@@ -705,7 +618,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.listeners</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:55</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:55</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -729,10 +642,47 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.listenersAny</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:56</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:56</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Listener</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="mainreceive" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> main<wbr>Receive</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">main<wbr>Receive<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ElectronTransport.ts:84</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Processes incoming messages for the main process.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Event details.</p>
+									</div>
+								</li>
+								<li>
+									<h5>arg: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Incoming message.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -747,7 +697,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.many</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:45</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:45</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -777,7 +727,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.off</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:51</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:51</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -804,7 +754,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.offAny</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:49</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:49</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -828,7 +778,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.on</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:41</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:41</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -855,7 +805,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.onAny</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:47</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:47</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -879,7 +829,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.once</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:43</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:43</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -906,7 +856,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.prependAny</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:48</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:48</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -930,7 +880,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.prependListener</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:42</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:42</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -957,7 +907,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.prependMany</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:46</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:46</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -987,7 +937,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.prependOnceListener</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:44</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:44</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1014,7 +964,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Transport.receive</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/multi-rpc-common/lib/Transport.d.ts:33</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/multi-rpc-common/lib/Transport.d.ts:33</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1041,22 +991,23 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="reconnect" class="tsd-anchor"></a>
 					<h3>reconnect</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">reconnect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from PersistentTransport.reconnect</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L239">TCPTransport.ts:239</a></li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/multi-rpc-common/lib/PersistentTransport.d.ts:90</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Reconnects to the server.</p>
+									<p>Attempts to reconnect to the server.</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>async</dt>
@@ -1064,6 +1015,24 @@
 								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="reconnectondisconnecthandler" class="tsd-anchor"></a>
+					<h3>reconnect<wbr>OnDisconnect<wbr>Handler</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">reconnect<wbr>OnDisconnect<wbr>Handler<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from PersistentTransport.reconnectOnDisconnectHandler</p>
+								<ul>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/multi-rpc-common/lib/PersistentTransport.d.ts:97</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1078,7 +1047,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.removeAllListeners</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:52</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:52</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1102,7 +1071,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from PersistentTransport.removeConnection</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/multi-rpc-common/lib/PersistentTransport.d.ts:50</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/multi-rpc-common/lib/PersistentTransport.d.ts:61</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1134,7 +1103,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.removeListener</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:50</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:50</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1150,6 +1119,43 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="renderreceive" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> render<wbr>Receive</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">render<wbr>Receive<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ElectronTransport.ts:73</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Processes incoming messages for the renderer.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Event details.</p>
+									</div>
+								</li>
+								<li>
+									<h5>arg: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Incoming message.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="send" class="tsd-anchor"></a>
 					<h3>send</h3>
@@ -1161,7 +1167,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides PersistentTransport.send</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L139">TCPTransport.ts:139</a></li>
+									<li>Defined in ElectronTransport.ts:42</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1187,87 +1193,30 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-					<a name="sendconnection" class="tsd-anchor"></a>
-					<h3>send<wbr>Connection</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">send<wbr>Connection<span class="tsd-signature-symbol">(</span>connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Socket</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overrides PersistentTransport.sendConnection</p>
-								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/multi-rpc-tcp-transport/blob/025158b/src/TCPTransport.ts#L155">TCPTransport.ts:155</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Sends a message via the provided connection.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>async</dt>
-									<dd></dd>
-									<dt>throws</dt>
-									<dd><ul>
-											<li>If sending the message fails.</li>
-										</ul>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>connection: <span class="tsd-signature-type">Socket</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The connection to use.</p>
-									</div>
-								</li>
-								<li>
-									<h5>message: <span class="tsd-signature-type">Message</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Message to send.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="sendto" class="tsd-anchor"></a>
 					<h3>send<wbr>To</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">send<wbr>To<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from PersistentTransport.sendTo</p>
+								<p>Overrides PersistentTransport.sendTo</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/multi-rpc-common/lib/PersistentTransport.d.ts:59</li>
+									<li>Defined in ElectronTransport.ts:58</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Sends a message to a client by its ID.</p>
+									<p>Sends a message to a renderer.</p>
 								</div>
-								<dl class="tsd-comment-tags">
-									<dt>async</dt>
-									<dd></dd>
-									<dt>throws</dt>
-									<dd><p>{TransportInClientState} - If the transport is already acting as a client.</p>
-									</dd>
-									<dt>throws</dt>
-									<dd><p>{NonExistantClient} - If client referenced does not exist.</p>
-									</dd>
-								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>ID of the client.</p>
+										<p>ID of the WebContents to send to.</p>
 									</div>
 								</li>
 								<li>
@@ -1292,7 +1241,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter2.setMaxListeners</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/eventemitter2/eventemitter2.d.ts:53</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/eventemitter2/eventemitter2.d.ts:53</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1316,7 +1265,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Transport.uniqueId</p>
 								<ul>
-									<li>Defined in /Users/zachary/Projects/multi-rpc-tcp-transport/node_modules/multi-rpc-common/lib/Transport.d.ts:20</li>
+									<li>Defined in /Users/zachary/Projects/multi-rpc-electron-transport/node_modules/multi-rpc-common/lib/Transport.d.ts:20</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1338,7 +1287,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_tcptransport_.html">"TCPTransport"</a>
+						<a href="../modules/_electrontransport_.html">"<wbr>Electron<wbr>Transport"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_index_.html">"index"</a>
@@ -1350,127 +1299,142 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_tcptransport_.tcptransport.html" class="tsd-kind-icon">TCPTransport</a>
+						<a href="_electrontransport_.electrontransport.html" class="tsd-kind-icon">Electron<wbr>Transport</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_tcptransport_.tcptransport.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_tcptransport_.tcptransport.html#connection" class="tsd-kind-icon">connection</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_tcptransport_.tcptransport.html#connections" class="tsd-kind-icon">connections</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="_tcptransport_.tcptransport.html#host" class="tsd-kind-icon">host</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="_tcptransport_.tcptransport.html#path" class="tsd-kind-icon">path</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="_tcptransport_.tcptransport.html#port" class="tsd-kind-icon">port</a>
+								<a href="_electrontransport_.electrontransport.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_tcptransport_.tcptransport.html#reconnectdelay" class="tsd-kind-icon">reconnect<wbr>Delay</a>
+								<a href="_electrontransport_.electrontransport.html#channelname" class="tsd-kind-icon">channel<wbr>Name</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_tcptransport_.tcptransport.html#serializer" class="tsd-kind-icon">serializer</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_electrontransport_.electrontransport.html#connected" class="tsd-kind-icon">connected</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_electrontransport_.electrontransport.html#connection" class="tsd-kind-icon">connection</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_electrontransport_.electrontransport.html#connections" class="tsd-kind-icon">connections</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_electrontransport_.electrontransport.html#electron" class="tsd-kind-icon">electron</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="_tcptransport_.tcptransport.html#server" class="tsd-kind-icon">server</a>
+								<a href="_electrontransport_.electrontransport.html#mainreceivebound" class="tsd-kind-icon">main<wbr>Receive<wbr>Bound</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_electrontransport_.electrontransport.html#reconnectdelay" class="tsd-kind-icon">reconnect<wbr>Delay</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_electrontransport_.electrontransport.html#reconnectondisconnect" class="tsd-kind-icon">reconnect<wbr>OnDisconnect</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_electrontransport_.electrontransport.html#serializer" class="tsd-kind-icon">serializer</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-private">
+								<a href="_electrontransport_.electrontransport.html#ipcmain" class="tsd-kind-icon">ipc<wbr>Main</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-private">
+								<a href="_electrontransport_.electrontransport.html#ipcrenderer" class="tsd-kind-icon">ipc<wbr>Renderer</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
+								<a href="_electrontransport_.electrontransport.html#isserver" class="tsd-kind-icon">is<wbr>Server</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#addconnection" class="tsd-kind-icon">add<wbr>Connection</a>
+								<a href="_electrontransport_.electrontransport.html#addconnection" class="tsd-kind-icon">add<wbr>Connection</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+								<a href="_electrontransport_.electrontransport.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_tcptransport_.tcptransport.html#close" class="tsd-kind-icon">close</a>
+								<a href="_electrontransport_.electrontransport.html#close" class="tsd-kind-icon">close</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_tcptransport_.tcptransport.html#connect" class="tsd-kind-icon">connect</a>
+								<a href="_electrontransport_.electrontransport.html#connect" class="tsd-kind-icon">connect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_electrontransport_.electrontransport.html#emit" class="tsd-kind-icon">emit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_electrontransport_.electrontransport.html#emitasync" class="tsd-kind-icon">emit<wbr>Async</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_electrontransport_.electrontransport.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_tcptransport_.tcptransport.html#disablereconnect" class="tsd-kind-icon">disable<wbr>Reconnect</a>
+								<a href="_electrontransport_.electrontransport.html#listen" class="tsd-kind-icon">listen</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#emit" class="tsd-kind-icon">emit</a>
+								<a href="_electrontransport_.electrontransport.html#listeners" class="tsd-kind-icon">listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#emitasync" class="tsd-kind-icon">emit<wbr>Async</a>
+								<a href="_electrontransport_.electrontransport.html#listenersany" class="tsd-kind-icon">listeners<wbr>Any</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_electrontransport_.electrontransport.html#mainreceive" class="tsd-kind-icon">main<wbr>Receive</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_tcptransport_.tcptransport.html#listen" class="tsd-kind-icon">listen</a>
+								<a href="_electrontransport_.electrontransport.html#many" class="tsd-kind-icon">many</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#listeners" class="tsd-kind-icon">listeners</a>
+								<a href="_electrontransport_.electrontransport.html#off" class="tsd-kind-icon">off</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#listenersany" class="tsd-kind-icon">listeners<wbr>Any</a>
+								<a href="_electrontransport_.electrontransport.html#offany" class="tsd-kind-icon">off<wbr>Any</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#many" class="tsd-kind-icon">many</a>
+								<a href="_electrontransport_.electrontransport.html#on" class="tsd-kind-icon">on</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#off" class="tsd-kind-icon">off</a>
+								<a href="_electrontransport_.electrontransport.html#onany" class="tsd-kind-icon">on<wbr>Any</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#offany" class="tsd-kind-icon">off<wbr>Any</a>
+								<a href="_electrontransport_.electrontransport.html#once" class="tsd-kind-icon">once</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#on" class="tsd-kind-icon">on</a>
+								<a href="_electrontransport_.electrontransport.html#prependany" class="tsd-kind-icon">prepend<wbr>Any</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#onany" class="tsd-kind-icon">on<wbr>Any</a>
+								<a href="_electrontransport_.electrontransport.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#once" class="tsd-kind-icon">once</a>
+								<a href="_electrontransport_.electrontransport.html#prependmany" class="tsd-kind-icon">prepend<wbr>Many</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#prependany" class="tsd-kind-icon">prepend<wbr>Any</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#prependmany" class="tsd-kind-icon">prepend<wbr>Many</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
+								<a href="_electrontransport_.electrontransport.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_tcptransport_.tcptransport.html#receive" class="tsd-kind-icon">receive</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_tcptransport_.tcptransport.html#reconnect" class="tsd-kind-icon">reconnect</a>
+								<a href="_electrontransport_.electrontransport.html#receive" class="tsd-kind-icon">receive</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
+								<a href="_electrontransport_.electrontransport.html#reconnect" class="tsd-kind-icon">reconnect</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#removeconnection" class="tsd-kind-icon">remove<wbr>Connection</a>
+								<a href="_electrontransport_.electrontransport.html#reconnectondisconnecthandler" class="tsd-kind-icon">reconnect<wbr>OnDisconnect<wbr>Handler</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
+								<a href="_electrontransport_.electrontransport.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_electrontransport_.electrontransport.html#removeconnection" class="tsd-kind-icon">remove<wbr>Connection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_electrontransport_.electrontransport.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_electrontransport_.electrontransport.html#renderreceive" class="tsd-kind-icon">render<wbr>Receive</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_tcptransport_.tcptransport.html#send" class="tsd-kind-icon">send</a>
+								<a href="_electrontransport_.electrontransport.html#send" class="tsd-kind-icon">send</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_tcptransport_.tcptransport.html#sendconnection" class="tsd-kind-icon">send<wbr>Connection</a>
+								<a href="_electrontransport_.electrontransport.html#sendto" class="tsd-kind-icon">send<wbr>To</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#sendto" class="tsd-kind-icon">send<wbr>To</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_tcptransport_.tcptransport.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
+								<a href="_electrontransport_.electrontransport.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="_tcptransport_.tcptransport.html#uniqueid" class="tsd-kind-icon">unique<wbr>Id</a>
+								<a href="_electrontransport_.electrontransport.html#uniqueid" class="tsd-kind-icon">unique<wbr>Id</a>
 							</li>
 						</ul>
 					</li>
